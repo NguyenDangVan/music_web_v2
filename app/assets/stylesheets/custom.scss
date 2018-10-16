@@ -1,2 +1,166 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+*{
+  box-sizing: border-box;
+  margin: auto;
+}
+.music-left{
+  float: left;
+  width: 64%;
+  position: relative;
+  padding-top: 40px;
+}
+.banner img{
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  padding-left: 20px;
+}
+
+.title{
+  width: 100%;
+
+  margin-left: 20px;
+}
+.album1 img, .album2 img{
+  position: relative;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 15px 10px;
+}
+.album1, {
+  margin-top: 50px;
+  margin-left: 15px;
+}
+.album2{
+  margin-top: 35px;
+  margin-left: 15px;
+}
+
+.music-right{
+  float: left;
+  width: 29%;
+  margin-left: 1%;
+  position: relative;
+  padding-top: 40px;
+}
+.video-main{
+
+}
+.video-main video{
+    width: 100%;
+}
+.playlist-main{
+  position: relative;
+}
+.song{
+  background-color: gray;
+  display: block;
+  width: 100%;
+  border: 2px white solid;
+  height: 40px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  color: white;
+}
+.song:hover{
+  background-color: green;
+}
+.clear{
+  clear: both;
+}
+/* footer */
+footer{
+  text-align: center;
+  color: white;
+  background-color: #000;
+  height: 40px;
+  padding-top: 12px;
+}
+ /*menu left */
+.left{
+  width: 5%;
+  float: left;
+  background: lightgray;
+  height: 1900px;
+}
+
+.logo a{
+  font-weight: 700;
+  font-size: 3em;
+}
+.logo {
+  text-align: center;
+  padding-top: 5px;
+}
+.inner{
+  display: block;
+
+}
+.inner p{
+  height: 30px;
+  padding-left: 8px;
+  padding-top: 15px;
+}
+.inner p:hover{
+  background-color: red;
+}
+/* header */
+.header{
+  width: 95%;
+  float: right;
+  background-color: #6CE76C;
+  height: 66px;
+}
+.search-box{
+  width: 65%;
+  float: left;
+  text-align: center;
+  padding-top: 19px;
+}
+.login-box{
+  float: left;
+  width: 35%;
+  text-align: center;
+  padding-top: 19px;
+}
+.header input{
+
+}
+.header button{
+
+}
+
+/* forms */
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
