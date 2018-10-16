@@ -113,15 +113,53 @@ footer{
   background-color: #6CE76C;
   height: 66px;
 }
+.menu-header li{
+  position: relative;
+}
+.menu-header .sub-menu {
+  display: none;
+  position: absolute;
+  margin-left: -35px;
+}
+.menu-header li:hover>.sub-menu{
+  display: block;
+}
+.menu-header ul {
+  margin-bottom: -10px;
+  list-style-type: none;
+  text-align: center;
+  a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+  a:hover {
+    background: #F1F1F1;
+    color: #333;
+  }
+  li{
+    float: right;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+  }
+}
 .search-box{
-  width: 65%;
+  width: 15%;
   float: left;
   text-align: center;
   padding-top: 19px;
+  input{
+    padding: 7px;
+    width: 250px;
+    margin-left: 5px;
+  }
 }
 .login-box{
   float: left;
-  width: 35%;
+  width: 85%;
   text-align: center;
   padding-top: 19px;
 }
@@ -162,5 +200,12 @@ input {
   @extend .has-error;
   .form-control {
     color: $state-danger-text;
+  }
+}
+
+.form-login {
+  width: 500px;
+  h1 {
+    text-align: center;
   }
 }
